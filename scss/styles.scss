@@ -1,0 +1,92 @@
+:root {
+
+    // Basics colors
+    --c-black: #000;
+    --c-gray-dark: #cccccc;
+    --c-gray-medium: #ebebeb;
+    --c-gray-soft: #f8f9fa;
+    --c-white: #fff;
+
+    /* UB Color Palette */
+
+    --c-blue: #0072ce;
+    --c-blue-rgba: 0,114,206;
+    --c-blue-hsl: 207, 100%, 40%;
+    --c-blue-light: #cbe8ff;
+    --c-blue-dark: #0364b2;
+
+    --c-orange: #ff6200;
+    --c-orange-rgba: 171, 171, 171;
+    --c-orange-hsl: 23, 100%, 50%;
+    --c-orange-light: #ffd6bd;
+    --c-orange-dark: #e25903;
+
+
+    // Accent color
+    --c-accent: var(--c-orange);
+    --c-accent-light: var(--c-orange-light);
+    --c-accent-dark: var(--c-orange-dark);
+
+
+    //Auxiliar colors
+    --c-red: #c11717;
+    --c-red-rgba: 0,79,142;
+    --c-green: #008000;
+    --c-green-rgba: 120,100,25;
+
+    // Spaces
+    --space-xs: .25em;
+    --space-sm: .5em;
+    --space-md: 1em;
+    --space-lg: 2em;
+    --space-xl: 3em;
+
+    --f-size-xs: 12px;
+    --f-size-sm: 14px;
+    --f-size-md: 16px;
+    --f-size-lg: 18px;
+    --f-size-xl: 28px;
+    --f-size-xxl: 60px;
+
+    --f-size-h1: 45px;
+    --f-size-h2: 36px;
+    --f-size-h3: 24px;
+    --f-size-h4: 22px;
+    --f-size-h5: 18px;
+    --f-size-h6: 16px;
+
+
+    --bs-font-sans-serif: 'Roboto', sans-serif;
+    --bs-font-serif: 'Roboto', sans-serif;
+    //--bs-font-icons: "Ionicons";
+
+    --shadow: 0 7px 15px 0 rgb(0 0 0 / 20%);
+    --shadow-light: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    color: var(--c-black);
+    font-family: 'Roboto', 'Google Sans';
+
+}
+
+// Layout
+@import 'layout/layout';
+
+// Core
+@import 'core/core';
+@import 'core/helpers';
+@import 'core/sticky';
+
+// Components
+@import 'components/header';
+@import 'components/table';
+@import 'components/nav';
+@import 'components/main';
+@import 'components/button';
+@import 'components/accordion';
+@import 'components/box';
+@import 'components/card';
+@import 'components/footer';
+
+
+@import 'components/select-lang';
+@import 'components/forms/forms';

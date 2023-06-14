@@ -1,0 +1,24 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    transition: top .3s;
+    z-index: 9999;
+    background-color: var(--c-white);
+}
+
+@media (max-width:768px){
+    .sticky {
+        position: relative;
+    }
+}
+
+.totop {
+    display: none;
+    border-radius: 50%;
+    padding: var(--space-sm);
+    background-color: var(--c-white);
+    position: fixed;
+    bottom: var(--space-lg);
+    right: var(--space-lg);
+    transition: top .3s ease;
+}

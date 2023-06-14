@@ -1,0 +1,129 @@
+.box {
+    &--selects {
+        background-color: var(--c-gray-medium);
+        padding: var(--space-lg) 0;
+        @media(max-width:768px) {
+            height: 120px;
+            padding: 0px !important;
+        }
+
+        &-container {
+            display: flex;
+            flex-flow: row wrap;
+            gap: var(--space-sm) var(--space-lg);
+        }
+    }
+
+
+    &--radioButtons {
+        font-family: var(--bs-font-sans-serif);
+        display: flex;      
+    }
+
+    &-shadow {
+        box-shadow: var(--shadow);
+
+        &--light {
+            box-shadow: var(--shadow-light);
+        }
+    }
+
+    &--table {
+        width: 100px;
+        background-color: var(--c-white);
+        border: solid 1px var(--c-accent);
+
+        h4 {
+            font-weight: bold;
+            color: var(--c-accent);
+            background-color: var(--c-white);
+        }
+    }
+
+    &--orange {
+        width: 100px;
+        gap: 8px;
+        background: var(--c-accent);
+        border-radius: 24.7252px;
+        text-align: center;
+
+        span {
+            font-size: var(--f-size-xs);
+            color: var(--c-white);
+        }
+
+        @media(max-width:768px) {
+            margin-left: var(--space-sm);
+        }
+    }
+
+    &--groups {
+        padding: 0 !important;
+        margin: var(--space-md) 0 0 0;
+        background: var(--c-white);
+        border: 1px solid #F2F2F2;
+        height: 190px;
+        width: 313px;
+
+        @media(max-width:768px) {
+            width: 100%;
+        }
+
+        h3 {
+            color: var(--c-accent);
+            text-align: center;
+        }
+    }
+
+    &--courses {
+        border: solid 1px var(--c-gray-medium);
+        height: 70px;
+
+        h4 {
+            margin-left: var(--space-md);
+            margin-top: 22px;
+        }
+    }
+
+    &--calendar {
+        height: 80px;
+
+        &--detail {
+            height: auto;
+
+            h5 {
+                font-weight: bold;
+            }
+
+            h6 {
+                font-weight: 500;
+                margin-top: var(--space-sm);
+                margin-bottom: var(--space-sm);
+
+            }
+        }   
+        
+    }
+
+    &--info{
+        border-color: var(--c-accent);
+    }
+    
+    &--fichaDetail {
+        display: none;
+        border: solid 1px var(--c-gray-medium);
+
+        h4 {
+            color: var(--c-accent);
+        }
+
+        h5 {
+            font-weight: bold;
+        }
+
+        h6 {
+            margin-top: var(--space-sm);
+            margin-bottom: var(--space-sm);
+        }
+    }
+}

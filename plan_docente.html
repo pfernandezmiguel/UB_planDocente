@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitat de Barcelona</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Roboto -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+
+    <!-- App Styles -->
+    <link href="src/assets/css/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="src/assets/css/styles.min.css.map" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="sticky" id="sticky">
+
+        <header id="appHeader" role="banner" class="app_header container-fluid ">
+            <div class="app_header--container container">
+
+                <div class="app_header--item app_header--left">
+                    <a href="https://web.ub.edu" class="app_header--logo">
+                        <img src="https://estatics.web.ub.edu/image/company_logo?img_id=2946262&t=1678784700264"
+                            title="Ir a la Universidad de Barcelona" alt="Logo Universitat de Barcelona">
+                    </a>
+                </div>
+
+                <div class="app_header--item app_header--right">
+
+                    <div class="app_header--movil">
+                        <a href="#" class="app_header--logo-movil">
+                            <img src="https://estatics.web.ub.edu/image/company_logo?img_id=2946262&t=1678784700264"
+                                title="Ir a la Universidad de Barcelona" alt="Logo Universitat de Barcelona">
+                        </a>
+
+                        <ul class="app_header--links">
+
+                            <li class="app_header--link">
+                                <div class="dropdown select_lang">
+                                    <button class="select_lang--button dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        CA <i data-feather="chevron-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item dropdown-item-top" href="#" title="Español">ES</a>
+                                        </li>
+                                        <li><a class="dropdown-item dropdown-item-top" href="#" title="English">EN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="app_header--content">
+                        <h1 class="app_header--title">
+                            Plan docente</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav id="appNav" class="app_nav container-fluid">
+            <div class="container app_nav--content">
+                <div class="app_nav--content-left"></div>
+                <div class="app_nav--content-right">
+                    <span class="bold">Historia económica mundial - Facultad de economía y empresa</span>
+                    <span role="heading">Curso 2022/2023</span>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <main id="appMain" class="app_main">
+
+        <section class="container-fluid section_divider--bottom ruler_gray hidden-mobile">
+            <div class="container">
+
+                <div class="d-flex justify-content-between">
+                    <h2 class="h2">
+                        Historia económica mundial
+                    </h2>
+                    <button class="button--print p-1 mt-3 hidden-mobile" onclick="printDocument()">Imprimir</button>
+                </div>
+
+                <div class="ml-2 hidden-mobile" id="index-title">
+                    <b>Index</b>
+                </div>
+
+
+                <div class="hidden-mobile" id="anchor-mobile1">
+                    <div class="d-flex ">
+                        <div class="anchor--m p-1">
+                            <p id="Datos_generales-tab" onclick="goToAnchor('Datos_generales')" class="anchor-p">Datos
+                                generales</p>
+                        </div>
+                        <div class="separator-vertical"></div>
+                        <div class="anchor--m p-1">
+                            <p id="Horas_estimadas-tab" onclick="goToAnchor('Horas_estimadas')" class="anchor-p">Horas
+                                estimadas</p>
+                        </div>
+                        <div class="separator-vertical"></div>
+                        <div class="anchor--m p-1">
+                            <p id="Recomendaciones-tab" onclick="goToAnchor('Recomendaciones')" class="anchor-p">
+                                Recomendaciones</p>
+                        </div>
+                        <div class="separator-vertical"></div>
+                        <div class="anchor--l p-1">
+                            <p id="Competencias-tab" onclick="goToAnchor('Competencias')" class="anchor-p">Competencias
+                                que
+                                se desarrollan</p>
+                        </div>
+                        <div class="separator-vertical"></div>
+                        <div class="anchor--m p-1">
+                            <p id="Objetivos-tab" onclick="goToAnchor('Objetivos')" class="anchor-p">Objetivos de
+                                aprendizaje</p>
+                        </div>
+                        <div class="separator-vertical"></div>
+                        <div class="anchor--m p-1">
+                            <p id="Bloques-tab" onclick="goToAnchor('Bloques')" class="anchor-p">Bloques temáticos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-mobile" id="anchor-mobile2">
+                    <div class="d-flex ">
+                        <div class="anchor--l p-1">
+                            <p id="Metodologia-tab" onclick="goToAnchor('Metodologia')" class="anchor-p">Metodología y
+                                actividades formativas</p>
+                        </div>
+                        <div class="separator-vertical"></div>
+                        <div class="anchor--l p-1">
+                            <p id="Evalucacion-tab" onclick="goToAnchor('Evaluacion')" class="anchor-p">Evaluación
+                                acreditativa de los aprendizajes</p>
+                        </div>
+                        <div class="separator-vertical"></div>
+                        <div class="anchor--l p-1">
+                            <p id="Fuentes-tab" onclick="goToAnchor('Fuentes')" class="anchor-p">Fuentes de información
+                                básica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class=" section_divider--bottom ruler_gray hidden-web">
+            <div class="container">
+
+                <div class="d-flex justify-content-between">
+                    <h2 class="h2">
+                        Historia económica mundial
+                    </h2>
+                    <button class="button--print p-1 mt-3 hidden-mobile" onclick="printDocument()">Imprimir</button>
+                </div>
+
+                <div class="ml-2 hidden-mobile" id="index-title">
+                    <b>Index</b>
+                </div>
+            </div>
+            <div class="hidden-web mt-3" id="index-dropdown">
+                <div class="flex box--selects">
+                    <div class="dropdown select_lang p-2">
+                        <button class="select_lang--button dropdown-toggle mt-4 ms-5" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Index<i data-feather="chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li >
+                                <p id="Datos_generales-tab" onclick="goToAnchor('Datos_generales')"
+                                    class="anchor-p dropdown-item">Datos
+                                    generales</p>
+                            </li>
+                            <li>
+                                <p id="Horas_estimadas-tab" onclick="goToAnchor('Horas_estimadas')"
+                                    class="anchor-p dropdown-item">Horas
+                                    estimadas</p>
+                            </li>
+                            <li>
+                                <p id="Recomendaciones-tab" onclick="goToAnchor('Recomendaciones')"
+                                    class="anchor-p dropdown-item">
+                                    Recomendaciones</p>
+                            </li>
+                            <li>
+                                <p id="Competencias-tab" onclick="goToAnchor('Competencias')"
+                                    class="anchor-p dropdown-item">Competencias que
+                                    se desarrollan</p>
+                            </li>
+                            <li>
+                                <p id="Objetivos-tab" onclick="goToAnchor('Objetivos')"
+                                    class="anchor-p dropdown-item">Objetivos de
+                                    aprendizaje</p>
+                            </li>
+                            <li>
+                                <p id="Bloques-tab" onclick="goToAnchor('Bloques')" class="anchor-p dropdown-item">
+                                    Bloques temáticos</p>
+                            </li>
+                            <li>
+                                <p id="Metodologia-tab" onclick="goToAnchor('Metodologia')"
+                                    class="anchor-p dropdown-item">Metodología y
+                                    actividades formativas</p>
+                            </li>
+                            <li>
+                                <p id="Evalucacion-tab" onclick="goToAnchor('Evaluacion')"
+                                    class="anchor-p dropdown-item">Evaluación
+                                    acreditativa de los aprendizajes</p>
+                            </li>
+                            <li>
+                                <p id="Fuentes-tab" onclick="goToAnchor('Fuentes')" class="anchor-p dropdown-item">
+                                    Fuentes de información
+                                    básica</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contenido de cada sección separado para poder usar anclas desde el index-->
+        <section class="container-fluid section_divider--bottom ruler_gray">
+            <div class="container" id="Datos_generales">
+                <h3 class="h3 mb-4">
+                    Datos generales
+                </h3>
+                <table class="table--info" id="table-datos-generales">
+                    <tr>
+                        <td class="td-table-datos-generales">Nombre de la asignatura</td>
+                        <td>Historia Económica Mundial</td>
+                    </tr>
+                    <tr>
+                        <td>Código de la asignatura</td>
+                        <td>36830</td>
+                    </tr>
+                    <tr>
+                        <td>Curso académico</td>
+                        <td>2019-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Coordinación</td>
+                        <td>Sergio Espuelas Barroso</td>
+                    </tr>
+                    <tr>
+                        <td>Departamento</td>
+                        <td>Departamento de Historia, Económica, Instituciones, Político y Economía Mundial</td>
+                    </tr>
+                    <tr>
+                        <td>Créditos</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Programa único</td>
+                        <td>S</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray hidden-mobile">
+            <div class="container" id="Horas_estimadas">
+                <h3 class="h3 mb-4">
+                    Horas estimadas de dedicación
+                </h3>
+                <table class="table--full table--full-plan">
+                    <tr>
+                        <td><b>Actividades</b></td>
+                        <td><b>Tipo de formación</b></td>
+                        <td><b>Horas</b></td>
+                        <td><b>Observaciones</b></td>
+                    </tr>
+                    <tr>
+                        <td>Teórico-práctica</td>
+                        <td>Presencial</td>
+                        <td>45</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tutorización por grupos</td>
+                        <td>Presencial</td>
+                        <td>14</td>
+                        <td>Mediante el desdoblamiento del grupo, un mismo profesor o profesora imparte la
+                            docencia en ambos
+                            subgrupos, pero la asistencia de los estudiantes es quincenal
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trabajo tutelado/dirigido</td>
+                        <td></td>
+                        <td>40</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Aprendizaje autónomo</td>
+                        <td></td>
+                        <td>50</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="container-fluid hidden-web">
+            <div class="container">
+            <h3 class="h3 mb-4">
+                Horas estimadas de dedicación
+            </h3>
+            
+                <div class="box--calendar border mt-3 " onclick="displayList('teorico-practica')">
+                    <h4 class="mt-4 ms-3" >Teórico-práctica</h4>
+                </div>
+                <div class="box--calendar--detail border hidden" id="teorico-practica">
+                    <div class="mt-3 ms-3 mb-3 me-3">
+                    <h5>Tipo de formación</h5>
+                    <h6>Presencial</h6>
+                    <h5>Horas</h5>
+                    <h6>45</h6>
+                    <h5>Observaciones</h5>
+                    <h6>Mediante el desdoblamiento del grupo, un mismo profesor o profesora imparte la
+                        docencia en ambos
+                        subgrupos, pero la asistencia de los estudiantes es quincenal</h6> 
+                </div>
+                </div>
+                <div class="box--calendar border" onclick="displayList('t-grupos')">
+                    <h4 class="mt-4 ms-3" >Tutorización por grupos</h4>
+                </div>
+                <div class="box--calendar--detail border hidden" id="t-grupos">
+                    <div class="mt-3 ms-3 mb-3 me-3">
+                    <h5>Tipo de formación</h5>
+                    <h6>Presencial</h6>
+                    <h5>Horas</h5>
+                    <h6>45</h6>
+                    <h5>Observaciones</h5>
+                    <h6>Mediante el desdoblamiento del grupo, un mismo profesor o profesora imparte la
+                        docencia en ambos
+                        subgrupos, pero la asistencia de los estudiantes es quincenal</h6> 
+                </div>
+                </div>
+        
+                <div class="box--calendar border " onclick="displayList('trabajo')">
+                    <h4 class="mt-4 ms-3" >Trabajo tutelado/dirigido</h4>
+                </div>
+                <div class="box--calendar--detail border hidden" id="trabajo">
+                    <div class="mt-3 ms-3 mb-3 me-3">
+                    <h5>Tipo de formación</h5>
+                    <h6>Presencial</h6>
+                    <h5>Horas</h5>
+                    <h6>45</h6>
+                    <h5>Observaciones</h5>
+                    <h6>Mediante el desdoblamiento del grupo, un mismo profesor o profesora imparte la
+                        docencia en ambos
+                        subgrupos, pero la asistencia de los estudiantes es quincenal</h6> 
+                </div>
+                </div>
+                <div class="box--calendar border" onclick="displayList('aprendizaje')">
+                    <h4 class="mt-4 ms-3 " >Aprendizaje autónomo</h4>
+                </div>
+                <div class="box--calendar--detail border hidden" id="aprendizaje">
+                    <div class="mt-3 ms-3 mb-3 me-3">
+                    <h5>Tipo de formación</h5>
+                    <h6>Presencial</h6>
+                    <h5>Horas</h5>
+                    <h6>45</h6>
+                    <h5>Observaciones</h5>
+                    <h6>Mediante el desdoblamiento del grupo, un mismo profesor o profesora imparte la
+                        docencia en ambos
+                        subgrupos, pero la asistencia de los estudiantes es quincenal</h6> 
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray mt-3">
+            <div class="container" id="Recomendaciones">
+                <h3 class="h3 mb-4">
+                    Recomendaciones
+                </h3>
+                <p>
+                    El objetivo central de la asignatura es ayudar al alumnado a pensar económicamente una
+                    realidad social compleja que cambia, y para ello deben recurrir
+                    a la "caja de herramientas" propia de un economista. El reto y el interés de la historia
+                    económica radica en el hecho de saber serleccionar en cada caso
+                    los conceptos y herramientas analíticas adecuadas de la macroeconomía o la microeconomía,
+                    para utilizarlas con descreza y sentido común fuera del marco abstracto
+                    de la pura teoría. Las vinculaciones intelectuales con otras asignaturas de economía
+                    aplicada, política económica, hacienda pública, economía internacional, estadística
+                    y econometría también son importantes.
+                </p>
+                <p>
+                    Por otra parte, entender la historia económica también exige el conocimiento de un marco de
+                    referencia histórico básico, particularmente de la etapa contemporánea
+                    que el alumnado debe haber recibido de su formación anterior o debe realizar el esfuerzo
+                    para adquirir y depurar.
+                </p>
+            </div>
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
+            <div class="container" id="Competencias">
+                <h3 class="h3 mb-2">
+                    Competencias que se desarrollan
+                </h3>
+                <ul class="list--orange">
+                    <li class="mb-2">
+                        Capacidad de aprendizaje y responsabilidad (capacidad de análisis, de síntesis, de
+                        visiones globales y de aplicación de los conocimientos a la práctica/capacidad
+                        de tomar decisiones y de adaptación a nuevas situaciones)
+                    </li>
+                    <li class="mb-2">
+                        Capacidad de adaptarse a entornos dinámicos. La competencia se concreta en: Capacidad de
+                        identificar y comprender los procesos de cambio e innovación, y analizar sus
+                        implicaciones
+                        Capacidad de prever, adaptar y proponer alternativas ante los cambios económicos,
+                        sociales y tecnológicos.
+                    </li>
+                    <li> Capacidad para elaborar, analizar e interpretar la información económica. Esta
+                        competencia se concreta en:
+                        <ul class="mt-2 list--orange--small">
+                            <li>
+                                Capacidad para obtener, tratar y analizar datos conducentes a la presentación de
+                                información económica, tanto interna como externa, de las entidades públicas y
+                                privadas.
+                            </li>
+                            <li>
+                                Capacidad para interpretar un informe económico de una entidad económica.
+                            </li>
+                            <li>
+                                Capacidad para interpretar correctamente los gráficos, índices económicos y sus
+                                representaciones derivadas, y emitir informes tanto escritos como orales.
+                            </li>
+                            <li>
+                                Capacidad para interpretar, analizar y realizar operaciones financieras y de
+                                inversión.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mt-2">
+                        Capacidad para apreciar la historia y el desarrollo de las ideas económicas así como de
+                        las realidades económicas actuales en distintos ámbitos territoriales. Esta competencia
+                        se concreta en:
+                        <ul class="mt-2 list--orange--small">
+                            <li>
+                                Conocimiento de las distintas doctrinas económicas que han utilizado y utilizan
+                                los economistas, así como la omprensión e las bases analíticas de cada una.
+                            </li>
+                            <li>
+                                Conocimiento y compresión de los hechos económicos relevantes con perspectiva
+                                histórica para explicar los procesos que han conducido a la realidad actual.
+                            </li>
+                            <li>
+                                Conocimiento de la realidad económica actual catalana, española y mundial, y
+                                capacidad para su análisis.
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
+            <div class="container hidden-mobile" id="Objetivos_desktop">
+                <h3 class="h3 mb-4">
+                    Objetivos de aprendizaje
+                </h3>
+                <div class="card_list">
+                    <div class="card">
+                        <div class="card-header-full header-background text-center ruler_bottom--small ruler_accent">
+                            <h4>Conocimientos</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    Reconocer las principales tendencias, etapas y factores de cambio de la economía
+                                    mundial a lo largo del tiempo.
+                                </li>
+                                <li>
+                                    Comprender que el mundo actual, en toda su diversidad y complejidad, resulta de
+                                    la existencia de diferentes trayectorias históricas.
+                                </li>
+                                <li>
+                                    Entender qeu el crecimiento es un concepto dinámico e histórico.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header-full header-background text-center ruler_bottom--small ruler_accent">
+                            <h4>Habilidades y destrezas</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    Utilizar el lenguaje, razonamiento y herramientas propias del economista en el
+                                    análisis histórico.
+                                </li>
+                                <li>
+                                    Aplicar el razonamiento lógico en la deducción de las consecuencias que se
+                                    derivan de la aplicación de políticas económicas.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header-full header-background text-center ruler_bottom--small ruler_accent">
+                            <h4>Actitudes, Valores y Normas</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>Esforzarse por mantener un ritmo de trabajo adecuado</li>
+                                <li>Plantearse la necesidad de adaptación a la realidad cambiante de nuestro mundo.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container hidden-web" id="Objetivos_mobile">
+                <h3 class="app_main--title">
+                    Objetivos de aprendizaje
+                </h3>
+                <div class="card card-m m-2">
+                    <div class="card-header-full header-background text-center ruler_bottom--small">
+                        <h4>Conocimientos</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                Reconocer las principales tendencias, etapas y factores de cambio de la economía
+                                mundial a lo largo del tiempo.
+                            </li>
+                            <li>
+                                Comprender que el mundo actual, en toda su diversidad y complejidad, resulta de
+                                la existencia de diferentes trayectorias históricas.
+                            </li>
+                            <li>
+                                Entender qeu el crecimiento es un concepto dinámico e histórico.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card card-m m-2">
+                    <div class="card-header-full header-background text-center ruler_bottom--small">
+                        <h4>Habilidades y destrezas</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                Utilizar el lenguaje, razonamiento y herramientas propias del economista en el
+                                análisis histórico.
+                            </li>
+                            <li>
+                                Aplicar el razonamiento lógico en la deducción de las consecuencias que se
+                                derivan de la aplicación de políticas económicas.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card card-m m-2">
+                    <div class="card-header-full header-background text-center ruler_bottom--small">
+                        <h4>Actitudes, Valores y Normas</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Esforzarse por mantener un ritmo de trabajo adecuado</li>
+                            <li>Plantearse la necesidad de adaptación a la realidad cambiante de nuestro mundo.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
+            <div class="container" id="Bloques">
+                <h3 class="h3 mb-4">Bloques temáticos</h3>
+                <ul class="accordion">
+                    <li class="ruler_bottom--small ruler_accent">
+
+                        <h4>
+                            <div id="minus1" class="minus"><i data-feather="minus" onclick="openDetailPlan(1)"></i></div>
+                            <div id="plus1" class="plus"><i data-feather="plus" onclick="openDetailPlan(1)"></i></div> 1.
+                            La Gran Divergencia
+                        </h4>
+                    </li>
+                    <div id="detailPlan1" class="container descriptive hidden">
+                        <p>1.1 La evolución de la economía mundial en el largo plazo y los orígenes de la Gran
+                            Divergencia</p>
+                        <p>1.2 Demogracía y regímenes demográficos durante la época preindustrial: Malthus y la Gran
+                            Divergencia</p>
+                        <p>1.3 El dinamismo de Gran Bretaña y Holanda durante la época moderna: agricultura,
+                            comercio y</p>
+                    </div>
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4>
+                            <div id="minus2" class="minus"><i data-feather="minus" onclick="openDetailPlan(2)"></i></div>
+                            <div id="plus2" class="plus"><i data-feather="plus" onclick="openDetailPlan(2)"></i></div>2.
+                            Revolución industrial
+                        </h4>
+                    </li>
+                    <div id="detailPlan2" class="container descriptive hidden">
+                        <p>1.1 La evolución de la economía mundial en el largo plazo y los orígenes de la Gran
+                            Divergencia</p>
+                        <p>1.2 Demogracía y regímenes demográficos durante la época preindustrial: Malthus y la Gran
+                            Divergencia</p>
+                        <p>1.3 El dinamismo de Gran Bretaña y Holanda durante la época moderna: agricultura,
+                            comercio y</p>
+                    </div>
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4>
+                            <div id="minus3" class="minus"><i data-feather="minus" onclick="openDetailPlan(3)"></i></div>
+                            <div id="plus3" class="plus"><i data-feather="plus" onclick="openDetailPlan(3)"></i></div> 3.
+                            Industrialización y divergencia en el siglo XIX
+                        </h4>
+                    </li>
+                    <div id="detailPlan3" class="container descriptive hidden">
+                        <p>1.1 La evolución de la economía mundial en el largo plazo y los orígenes de la Gran
+                            Divergencia</p>
+                        <p>1.2 Demogracía y regímenes demográficos durante la época preindustrial: Malthus y la Gran
+                            Divergencia</p>
+                        <p>1.3 El dinamismo de Gran Bretaña y Holanda durante la época moderna: agricultura,
+                            comercio y</p>
+                    </div>
+                    <li class="ruler_bottom--small ruler_accent">
+                        <h4>
+                            <div id="minus4" class="minus"><i data-feather="minus" onclick="openDetailPlan(4)"></i></div>
+                            <div id="plus4" class="plus"><i data-feather="plus" onclick="openDetailPlan(4)"></i></div> 4.
+                            La primera globalización económica en el siglo XIX
+                        </h4>
+                    </li>
+                    <div id="detailPlan4" class="container descriptive hidden">
+                        <p>1.1 La evolución de la economía mundial en el largo plazo y los orígenes de la Gran
+                            Divergencia</p>
+                        <p>1.2 Demogracía y regímenes demográficos durante la época preindustrial: Malthus y la Gran
+                            Divergencia</p>
+                        <p>1.3 El dinamismo de Gran Bretaña y Holanda durante la época moderna: agricultura,
+                            comercio y</p>
+                    </div>
+                    <li class="ruler_bottom--small ruler_accent">
+                                <h4>
+                                    <div id="minus5" class="minus"><i data-feather="minus" onclick="openDetailPlan(5)"></i></div>
+                                    <div id="plus5" class="plus"><i data-feather="plus" onclick="openDetailPlan(5)"></i></div>5. Guerra, depresión y desglobalización, 1914-1950
+                                </h4>
+                    </li>
+                    <div id="detailPlan5" class="container descriptive hidden">
+                        <p>1.1 La evolución de la economía mundial en el largo plazo y los orígenes de la Gran
+                            Divergencia</p>
+                        <p>1.2 Demogracía y regímenes demográficos durante la época preindustrial: Malthus y la Gran
+                            Divergencia</p>
+                        <p>1.3 El dinamismo de Gran Bretaña y Holanda durante la época moderna: agricultura,
+                            comercio y</p>
+                    </div>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
+            <div class="container" id="Metodologia">
+                <h3 class="h3 mb-4">Metodología y actividades formativas</h3>
+                <p>La modalidad docente de esta asignatura invluye actividades dirigidas a tutorización. El curso
+                    consta, por tanto, de dos tipos diferentes de clases presenciales:
+                    las teórico-prácticas y las de tutorización por grupos. Las clases teórico-prácticas consisten
+                    en la presentación y discusión de los temas contenidos en el programa
+                    oficial de la asignatura.
+                </p>
+                <p>Las clases de tutorización por grupos consisten en aproximaciones a temas específicosde la
+                    materia, con la intencón de esclarecer o ampliar los conocimientos generales
+                    del alumno sobre la asignatura, utilizando material adecuado en cada caso (textos, gráficos,
+                    cuadros, ejemplos, etc.). Las clases de tutorización se llevan a cabo durante
+                    una hora semanal, desdoblando el grupo entero en dos subgrupos. Según esta modalidad docente,
+                    las horas de trabajo presencial del estudiante son 60, tal y como queda especificado
+                    en el apartado de Horas de este plan docente.
+                </p>
+                <p>
+                    Las clases teórico-prácticas están pensadas para que el estudiante disponga de los recursos
+                    necesarios para alcanzar la capacidad de aprendizaje y responsabilidad en la
+                    linea que establece la competencia transversal común explicitada en este plan docente. En las
+                    clases de tutorización por grupos, el estudiante debe realizar las actividades previstas
+                    de carácter práctico para lograr la capacidad de tomar decisiones y de adaptación a nuevas
+                    situaciones, en la linea que establece la competencia transversal común esplicitada en este plan
+                    docente.
+                </p>
+                <p>
+                    El grupo GIE sigue una metodología docente diferenciada que se explicita en el correspondiente
+                    programa.
+                </p>
+                <p>
+                    Nota: Como consecuencia del despliegue del proyecto de fomento de la calidad docente que se está
+                    llevando a cabo en la Facultad de Economía y Empresa (impulsado desde la unidad de
+                    Investigación, Innovación y Mejora de la Docencia y el Aprendizaje (RIMDA) y el Vicerrectorado
+                    de Docencia y Ordenación Académica de la UB) durante los cursos 2018-2019 y
+                    2019-2020, la metodología docente de algunos de los grupos de la asignatura puede quedar
+                    modificada respecto a la descrita anteriormente. El detalle de esta metodología se publica en el
+                    Campus virtual en el inicio de curso.
+                </p>
+            </div>
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
+            <div class="container" id="Evaluacion">
+                <h3 class="h3 mb-4">Evaluación acreditativa de los aprendizajes</h3>
+                <p>
+                    Los contenidos desarrollados, tanto en las clases teórico-prácticas como en las de tutorización
+                    por grupos, se evalúan de la siguiente manera:
+                </p>
+                <p>
+                    1. El material expuesto en las clases teórico-prácticas es objeto de un examen final
+                    obligatorio. La puntuación máxima del examen es de 6 puntos (60% de la nota total).
+                    Sólo se puede aprobar la asignatura si se obtiene un mínimo de 2,5 puntos sobre 6 en el examen
+                    final. El alumnado que una vez sumada la calificación de las clases de tutorización
+                    por grupos y la del examen final obtenga una nota igual o superior a 5 puntos, no puede aprobar
+                    la asignatura si tiene menos de 2,5 puntos sobre 6 al examen final. Cuando se produzca esta
+                    situación la nota numérica que el profesor publi
+                    en las calificaciones de la asignatura es 4.
+                </p>
+                <p>
+                    2. Los alumnos que quieran realizar la evaluación continuada deben asistir regularmente a las
+                    sesiones presenciales de la asignatura.
+                </p>
+                <p>
+                    3. Las clases de tutorización por grupos se evalúan mediante ejercicios y pruebas que pueden ser
+                    de carácter colectivo o individual. Se realizan como mínmimo tres a lo largo del
+                    curso y cada una se califica con un máximo de 2 puntos. Para la nota final de los ejercicios y
+                    pruebas llevadas a cabo en las clases de tutorización por grupos se tienen en cuenta las
+                    dos mejores puntuaciones (40% de la nota total). Estos ejercicios y pruebas no pueden repetirse
+                    en ningún caso.
+                </p>
+                <p>
+                    4. El profesor puede incluir en la evaluación de la asignatura actividades adicionales a las
+                    mencionadas, las cuales pueden desarrollarse tanto dentro como fuera del
+                    aula. El conjunto de estas actividades adicionales se califica con un máximo de 2 puntos, puede
+                    sustituir a una de las evaluaciones de las clases de tutorización por grupos
+                    y se puede tener en cuenta a la hora de establecer las dos puntuaciones mejores señaladas en el
+                    apartado 3 de estas normas.
+                </p>
+                <p>
+                    5. En el proceso de evaluación se llevan a cab o actividades qeu permiten valorar la capacidad
+                    de aprendizaje y responsabilidad, de tomar decisiones y de adaptación a nuevas
+                    situaciones, en la línea de lo que establece la competencia transversal común explicitada en
+                    este plan docente.
+                </p>
+                <p>
+                    6. El proceso de reevaluación consiste en la valoración del grado de consecución de los
+                    resultados del aprendizaje de la asignatura, y se realiza siguiendo el procedimiento de
+                    reevaluación fijado por
+                    la Facultad de Economía y Empresa.
+                </p>
+                <p>
+                    7. Los estudiantes matriculados en el grupo en inglés quedan sujetos a las mismas normas de los
+                    apartados anteriores, con la particularidad de que el idioma utilizado para la
+                    evaluación será el inglés.
+                </p>
+                <p>
+                    8. Los estudiantes matriculados en el grupo GIE siguen una metodología de evaluación
+                    diferenciada que se explicita en el programa correspondiente.
+                </p>
+                <p>
+                    Nota: Como consecuencia del despliegue del proyecto de fomento de la calidad docenteqeu se está
+                    llevando a cabo en la Facultad de Economía y Empresa durante los cursos 2018-2019 y 2019-2020
+                    , y en caso de que los cambios metodológicos afecten al sistema de evaluación previsto en la
+                    asignatura, al inicio de curso se hace mención de las particulareidades de los grupos que se
+                    sometan
+                    al proyecto.
+                </p>
+            </div>
+        </section>
+
+        <section class="container-fluid section_divider--bottom ruler_gray">
+            <div class="container" id="evaluaciones">
+                <h3 class="h3 mb-4">Evaluación acreditativa de los aprendizajes</h3>
+                <p>
+                    Los alumnos que elijan no realizar un seguimiento regular y continuado del curso pueden optar
+                    por la eveluación única. En este caso:
+                </p>
+                <p>
+                    1. Deben comunicar esta decisión como máximo hasta la fecha del examen final, esta incluída.
+                </p>
+                <p>
+                    2. Son objeto de un examen final obligatorio. El estudiante debe responder a todas las
+                    preguntas, con una puntuación máxima de 10 puntos.
+                </p>
+                <p>
+                    3. El proceso de reevaluación consiste en la valoración del grado de consecución de los
+                    resultados del aprendizaje de la asignatura, y se realiza siguiento del método de reevaluación
+                    fijado por la Facultad de Economía y Empresa.
+                </p>
+                <p>
+                    4. Los estudiantes matriculados een el grupo de inglés qeudan sujetos a las mismas normas de los
+                    apartados anteriores, con la particularidad de que el idioma de la evaluación será el inglés.
+                </p>
+                <p>
+                    Nota: Como consecuencia del despliegue del proyecto de fomento de la calidad docenteqeu se está
+                    llevando a cabo en la Facultad de Economía y Empresa durante los cursos 2018-2019 y 2019-2020
+                    , y en caso de que los cambios metodológicos afecten al sistema de evaluación previsto en la
+                    asignatura, al inicio de curso se hace mención de las particulareidades de los grupos que se
+                    sometan
+                    al proyecto.
+                </p>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="container" id="Fuentes">
+                <h3 class="h3 mb-4">Fuentes de información básica</h3>
+                <div class="pt-3">
+                    <button class="button--orange">Consultar disponibilidad a CERCABIB</button>
+                </div>
+                <div class="card box--info mt-3">
+                    <div class="card-header d-flex bg_color--light">
+                        <div class="w-flex" >
+                            <div class="box--orange"><span>Libro</span></div>
+                            <div class="pl-4">
+                                <h4 class="ms-4">Allen, RobertC, (2011), Global Economic History. A very Short
+                                    Introduction.
+                                    Oxford University Press</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body--container card-body--container-column">
+                            <b class="p-1">Comentario: </b>
+                            <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                
+                        <div class="d-flex">
+                            <b class="p-1">Enlaces: </b>
+                            <a href="" class="p-1 ms-4  underline">
+                                Catáloco UB
+                            </a>
+                            <span>, </span>
+                            <a href="" class="p-1 pr-3 underline">17aed,2021</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card box--info mt-3">
+                    <div class="card-header color-black d-flex bg_color--light border-bottom-1">
+                        <div class="w-flex">
+                            <div class="box--orange"><span>Legislación</span></div>
+                            <div class="pl-4" style="display: block;">
+                                <h4 class="color-black ms-4">Legislación catalana</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body--container card-body--container-column">
+                            <b class="p-1">Comentario: </b>
+                            <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="d-flex">
+                            <b class="p-1">Enlaces: </b>
+                            <a href="" class="p-1 ms-4 underline">
+                                Catáloco UB
+                            </a>
+                            <span>, </span>
+                            <a href="" class="p-1 underline">17aed,2021</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-5">
+                    <b>Revisado por los Servicios Lingüísticos de la UB</b>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="app_footer">
+
+        <div class="container app_footer--container">
+            <div class="app_footer--left">
+                <a href="https://web.ub.edu">
+                <img class="app_footer--logo" 
+                    src="https://estatics.web.ub.edu/image/company_logo?img_id=2946262&t=1678784700264"
+                    title="Logo Universitat de Barcelona" alt="Logo Universitat de Barcelona">
+                </a>
+            </div>
+            <div class="app_footer--center">
+                <ul class="app_footer--links">
+                    <li><a href="#" target="_blank">Aviso legal</a></li>
+                    <li><a href="#" target="_blank">Política de cookies</a></li>
+                    <li><a href="#" target="_blank">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="app_footer--right">
+                <span>© Universidad de Barcelona</span>
+            </div>
+        </div>
+
+        <div class="app_footer--info">
+            <div class="container">
+                Area de Tecnologias de la Información y la comunicación - Aplicaciones - Proyectos de gestión académica
+            </div>
+        </div>
+        <button onclick="topFunction()" id="toTop" title="subir" class="totop"><i
+                data-feather="chevron-up"></i></button>
+    </footer>
+
+
+</body>
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+<!-- App JS -->
+<script src="src/assets/js/app.js"></script>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+<script>
+    feather.replace()
+</script>
+
+</html>

@@ -1,0 +1,30 @@
+app-root {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0;
+    
+    grid-template-areas:
+    'header'
+    'nav'
+    'main'
+    'footer';
+
+    height: 100vh;
+
+    app-header {
+        grid-area: header;
+    }
+
+    app-nav {
+        grid-area: nav;
+    }
+
+    app-main {
+        grid-area: main;
+    }
+
+    app-footer {
+        grid-area: footer;
+    }
+}

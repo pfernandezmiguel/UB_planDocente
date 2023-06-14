@@ -1,0 +1,18 @@
+.app_main {
+    padding: var(--space-lg) 0;
+    min-height: 800px;
+}
+
+@media (max-width:768px){
+   
+}
+.plus {
+    display: inline;
+    color: var(--c-accent)
+}
+
+.minus {
+    display: none;
+    color: var(--c-accent)
+}
+

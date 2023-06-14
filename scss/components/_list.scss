@@ -1,0 +1,13 @@
+.list {
+    list-style: none;
+
+    li {
+        padding-top: var(--space-lg);
+    }
+
+    &--detail {
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,41 @@
+.accordion {
+    list-style: none;
+    padding-left: 0px !important;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--space-lg);
+
+    li {
+        //padding-top: var(--space-lg);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+    &--detailMobile {
+        margin: 0px;
+        border: solid 1px var(--c-gray-medium);
+
+        h5 {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        h6 {
+            padding-left: 10px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}

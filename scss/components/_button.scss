@@ -1,0 +1,37 @@
+.button {
+    &--orange {
+        color: var(--c-accent);
+        background: #FFFFFF;
+        border: 1px solid var(--c-accent);
+        border-radius: 4px;
+        margin-right: 8px;
+        padding: 6px;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--c-orange-light);
+        }
+
+        @media (max-width:768px) {
+            width: 100%;
+        }
+    }
+
+    &--print {
+        color: var(--c-accent);
+        background: #FFFFFF;
+        border: 1px solid var(--c-accent);
+        border-radius: 4px;
+        margin-right: 8px;
+        margin-left: 39rem;
+        max-height: 2rem;
+        padding: 6px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--c-orange-light);
+        }
+    }
+
+}

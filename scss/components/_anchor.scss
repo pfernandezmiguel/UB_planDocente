@@ -1,0 +1,23 @@
+.anchor {
+
+    &--m{
+        text-decoration: bold;
+        min-width: 10rem;
+        max-height: 3rem;
+        display: flex;
+        border-right: 1px;
+        border-right-color: var(--c-gray-medium);
+    }
+
+    &--l{
+        text-decoration: none !important;
+        min-width: 20rem;
+        max-height: 3rem;
+        display: flex;
+        border-right: 1px;
+        border-right-color: var(--c-gray-medium);
+    }
+
+}
+
+

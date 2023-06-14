@@ -1,0 +1,75 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {}
+
+
+a {
+    text-decoration: none;
+    color: var(--c-black);
+
+    &:hover {
+        color: var(--c-accent);
+        text-decoration: none !important;
+    }
+
+}
+
+
+[role="headding"] {}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: var(--bs-font-sans-serif);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+h1,
+.h1 {
+    font-size: var(--f-size-h2);
+}
+
+h2,
+.h2 {
+    font-size: var(--f-size-h2);
+}
+
+h3,
+.h3 {
+    font-size: var(--f-size-h3);
+}
+
+h4,
+.h4 {
+    font-size: var(--f-size-h4);
+}
+
+h5,
+.h5 {}
+
+h6,
+.h6 {}
+
+
+*:focus-visible {
+    outline: none !important;
+    border: 2px solid var(--c-black) !important;
+}
+
+
+

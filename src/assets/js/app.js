@@ -1,5 +1,61 @@
 
 // Header hidden
+let hours = document.getElementById("Horas_estimadas");
+let hoursMv = document.getElementById("Horas_estimadas_mv");
+let index = document.getElementById("index-title");
+let indexMv = document.getElementById("index-title-mv");
+let indexDrop = document.getElementById("index-dropdown");
+let anchormobile1 = document.getElementById("anchor-mobile1");
+let anchormobile2 = document.getElementById("anchor-mobile2");
+
+let screenWidth = screen.width
+window.onresize = controlVisible;
+
+function controlVisible(){
+  console.log('ENTROOOOOO111',screen.width)
+  if (screen.width < 768) {
+    hours.style.display = "none";
+    anchormobile1.style.display = "none";
+    anchormobile2.style.display = "none";
+    index.style.display = "none";
+    hoursMv.style.display = "block"
+    indexMv.style.display = "block"
+    indexDrop.style.display = "block"
+
+  }else{
+    hours.style.display = "block";
+    index.style.display = "block";
+    anchormobile1.style.display = "block";
+    anchormobile2.style.display = "block";
+    hoursMv.style.display = "none"
+    indexMv.style.display = "none"
+    indexDrop.style.display = "none"
+
+  }
+}
+
+$(document).ready(function(){
+  if (screen.width < 768) {
+    hours.style.display = "none";
+    anchormobile1.style.display = "none";
+    anchormobile2.style.display = "none";
+    index.style.display = "none";
+    hoursMv.style.display = "block"
+    indexMv.style.display = "block"
+    indexDrop.style.display = "block"
+
+  }else{
+    hours.style.display = "block";
+    index.style.display = "block";
+    anchormobile1.style.display = "block";
+    anchormobile2.style.display = "block";
+    hoursMv.style.display = "none"
+    indexMv.style.display = "none"
+    indexDrop.style.display = "none"
+
+  }
+});
+
 $(document).ready(function(){
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function () {
@@ -34,7 +90,6 @@ $(document).ready(function(){
 
 
 //VARIABLES
-let screenWidth = screen.width
 let detail = document.getElementById("detail");
 let detailCalendar = document.getElementById("detailCalendar");
 
@@ -58,7 +113,7 @@ teorico_practica.style.display = "none";
 t_grupos.style.display = "none";
 
 function openDetail() {
-  if (screenWidth < 579) {
+  if (screenWidth < 768) {
     if (listMobile.style.display == "block") {
       listMobile.style.display = "none";
       minus.style.display = "none";
@@ -101,7 +156,7 @@ function openDetailPlan(id){
 }
 window.addEventListener("resize", function () {
   screenWidth = screen.width;
-  if (screenWidth < 579) {
+  if (screenWidth < 768) {
     objetivos_mobile.style.display = "block";
     objetivos_desktop.style.display = "none";
     anchor1.style.display = "none";
@@ -146,6 +201,7 @@ function openDetailCalendar() {
     minus.style.display = 'inline'
   }
 }
+
 function openDetailMobileCalendar() {
   if (detailMobileCalendar.style.display == "block") {
     detailMobileCalendar.style.display = "none";
@@ -153,6 +209,7 @@ function openDetailMobileCalendar() {
     detailMobileCalendar.style.display = "block";
   }
 }
+
 function openDetailDates() {
   if (fichaDetail.style.display == "block") {
     fichaDetail.style.display = "none";
@@ -160,6 +217,7 @@ function openDetailDates() {
     fichaDetail.style.display = "block";
   }
 }
+
 function displayList(tab) {
   document.getElementById(tab).style.display === "none" ? document.getElementById(tab).style.display = 'block' : document.getElementById(tab).style.display = "none";
 }
@@ -169,5 +227,23 @@ function goToAnchor(tab){
 }
 
 function printDocument(){
+  
+  let detailPlan1 = document.getElementById("detailPlan1");
+  detailPlan1.style.display = "block";
+  let detailPlan2 = document.getElementById("detailPlan2");
+  detailPlan2.style.display = "block";
+  let detailPlan3 = document.getElementById("detailPlan3");
+  detailPlan3.style.display = "block";
+  let detailPlan4 = document.getElementById("detailPlan4");
+  detailPlan4.style.display = "block";
+  let detailPlan5 = document.getElementById("detailPlan5");
+  detailPlan5.style.display = "block";
+
   window.print();
+
+  detailPlan1.style.display = "none";
+  detailPlan2.style.display = "none";
+  detailPlan3.style.display = "none";
+  detailPlan4.style.display = "none";
+  detailPlan5.style.display = "none";
 }

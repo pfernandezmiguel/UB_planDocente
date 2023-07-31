@@ -52,6 +52,10 @@
     padding: 12px;
 }
 
+.adenda{
+    font-style: italic;
+}
+
 .underline {
     text-decoration: underline;
     text-decoration-color: var(--c-accent);
@@ -72,7 +76,6 @@
     height: 21px;
     background: var(--c-gray-medium);
 }
-
 .anchor-p {
     cursor: pointer;
 
@@ -190,6 +193,15 @@
             padding-top: var(--space-lg);
             margin-top: var(--space-lg);
             border-top: 1px solid var(--c-gray-medium);
+        }
+
+        &--short{
+            padding-bottom: var(--space-xs);
+            margin-bottom: var(--space-xs);
+            padding-top: var(--space-xs);
+            margin-top: var(--space-xs);
+            border-bottom: 1px solid var(--c-gray-medium);
+
         }
     }
 }

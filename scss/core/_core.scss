@@ -8,12 +8,12 @@ body {}
 
 
 a {
-    text-decoration: none;
+    text-decoration: underline var(--c-accent);
     color: var(--c-black);
 
     &:hover {
         color: var(--c-accent);
-        text-decoration: none !important;
+        text-decoration: underline var(--c-accent) !important;
     }
 
 }

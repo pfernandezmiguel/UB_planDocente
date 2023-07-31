@@ -2,6 +2,7 @@
     &--selects {
         background-color: var(--c-gray-medium);
         padding: var(--space-lg) 0;
+
         @media(max-width:768px) {
             height: 120px;
             padding: 0px !important;
@@ -17,7 +18,7 @@
 
     &--radioButtons {
         font-family: var(--bs-font-sans-serif);
-        display: flex;      
+        display: flex;
     }
 
     &-shadow {
@@ -57,6 +58,22 @@
         }
     }
 
+    &--hours {
+        padding:2px 10px 0px 10px;
+        height: 30px;
+        background: var(--c-accent);
+        border-radius: 24.7252px;
+        text-align: center;
+
+        span {
+            font-size: var(--f-size-xs);
+            color: var(--c-white);
+        }
+        @media(max-width:768px) {
+            width: 65%;
+        }
+    }
+
     &--groups {
         padding: 0 !important;
         margin: var(--space-md) 0 0 0;
@@ -91,24 +108,24 @@
         &--detail {
             height: auto;
 
-            h5 {
+            &-title {
                 font-weight: bold;
             }
 
-            h6 {
+            &-sbtitle {
                 font-weight: 500;
                 margin-top: var(--space-sm);
                 margin-bottom: var(--space-sm);
 
             }
-        }   
-        
+        }
+
     }
 
-    &--info{
+    &--info {
         border-color: var(--c-accent);
     }
-    
+
     &--fichaDetail {
         display: none;
         border: solid 1px var(--c-gray-medium);
